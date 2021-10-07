@@ -641,3 +641,15 @@ body {
 .subnav__link:hover {
     background-color: #2c31b4;
 }
+
+.stories {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    -webkit-column-gap: 15px;
+    -moz-column-gap: 15px;
+    column-gap: 15px;
+}
+
+.stories__item {
+    background-color: #ccc;
+}
