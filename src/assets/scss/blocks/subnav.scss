@@ -20,5 +20,6 @@
     transition: background-color .2s ease-in-out;
     &:hover{
         background-color: darken($color: $blue, $amount: 5%);
+        text-decoration: none
     }
 }
