@@ -8,6 +8,9 @@
 }
 .post__header{
     margin: -2.5rem -2.5rem 2.5rem;
+    &--video{
+        margin: 0 0 2.5rem;
+    }
 }
 .post__content{
     margin-bottom: 2rem;
