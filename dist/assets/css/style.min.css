@@ -1557,6 +1557,9 @@ a:hover {
   left: 0;
   z-index: 1010;
 }
+.modal.show {
+  display: flex;
+}
 
 .modal__content {
   width: 100%;
@@ -1565,9 +1568,16 @@ a:hover {
   position: relative;
   background-color: #202020;
   border-radius: 5px;
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 .modal__content--contact {
   padding-bottom: 2.5rem;
+}
+.modal__content--story {
+  padding: 0;
+  background: none;
 }
 
 .modal__close {
@@ -1602,6 +1612,11 @@ a:hover {
 }
 .modal__footer a:hover {
   text-decoration: none;
+}
+
+.modal__video {
+  display: block;
+  margin: 0 auto;
 }
 
 .burger {
