@@ -1259,10 +1259,13 @@ a:hover {
 .modal__content {
   width: 100%;
   max-width: 500px;
-  padding: 8rem 8rem 2.5rem;
+  padding: 8rem;
   position: relative;
   background-color: #202020;
   border-radius: 5px;
+}
+.modal__content--contact {
+  padding-bottom: 2.5rem;
 }
 
 .modal__close {
