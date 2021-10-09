@@ -35,7 +35,7 @@ eval("const modalBtn = document.querySelectorAll('[data-modal]')\r\nconst body =
   \***********************************/
 /***/ (function() {
 
-eval("\n\n//# sourceURL=webpack://brainscloud/./src/assets/js/textarea.js?");
+eval("const textarea = document.querySelectorAll('[data-autoresize]')\r\n\r\ntextarea.forEach(item => {\r\n    let textareaH = item.offsetHeight;\r\n    item.addEventListener('input', event => {\r\n        let $this = event.target\r\n        $this.style.height = textareaH + 'px'\r\n        $this.style.height = $this.scrollHeight + 'px'\r\n    })\r\n})\n\n//# sourceURL=webpack://brainscloud/./src/assets/js/textarea.js?");
 
 /***/ })
 
