@@ -5,6 +5,10 @@
     background-color: $primary;
     box-shadow: 0 15px 25px rgba($color: $black, $alpha: .35);
     border-radius: 5px;
+
+    @include breakpoint($mobile-bp){
+        padding: 1.5rem;
+    }
 }
 .post__header{
     margin: 0 0 2.5rem;
@@ -22,6 +26,7 @@
 }
 .post__title{
     margin-bottom: 1.5rem;
+    line-height: 1.4;
     font-size: 1.8rem;
     color: $white;
     font-weight: 500;
@@ -32,6 +37,10 @@
 
     &--mb0{
         margin-bottom: 0;
+    }
+
+    &--open{
+        margin-bottom: 0.75rem;
     }
 }
 .post__description{
@@ -93,6 +102,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include breakpoint($mobile-bp){
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 .post__data{
@@ -106,6 +120,11 @@
         &:hover{
             text-decoration: underline;
         }
+    }
+    @include breakpoint($mobile-bp){
+        margin-bottom: 1rem;
+
+        font-size: 1.2rem;
     }
 }
 
